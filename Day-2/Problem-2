@@ -5,7 +5,7 @@ dcounter = 0
 
 numList = []
 
-f = open("inputData")
+f = open("inputData2")
 for line in f:
   numList.append(line.split())
 
