@@ -1,0 +1,22 @@
+p = 0
+acounter = 0
+hcounter = 0
+dcounter = 0
+
+numList = []
+
+f = open("inputData")
+for line in f:
+  numList.append(line.split())
+
+for p in range(len(numList)):
+
+  if numList[p][0] == "up":
+    acounter -= int(numList[p][-1])
+  elif numList[p][0] == "down":
+    acounter += int(numList[p][-1])
+  elif numList[p][0] == "forward":
+    hcounter += int(numList[p][-1])
+    dcounter += acounter * int(numList[p][-1])
+
+print(dcounter * hcounter)
