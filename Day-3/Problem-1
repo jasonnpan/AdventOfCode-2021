@@ -5,7 +5,7 @@ epsilL = 0
 
 numList = []
 
-f = open("inputData")
+f = open("inputData1")
 for line in f:
   numList.append(line.strip())
 
